@@ -1,0 +1,7 @@
+data
+cert
+*.bat
+iniciar.sh
+.git
+.DS_Store
+docker-compose.yml

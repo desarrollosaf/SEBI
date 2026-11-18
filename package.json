@@ -1,0 +1,10 @@
+{
+  "name": "sebi",
+  "version": "1.0.0",
+  "description": "SEBI - Sistema de Enajenación de Bienes Informáticos (Dirección de Informática, Poder Legislativo del Estado de México)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "private": true,
+  "license": "UNLICENSED"
+}
