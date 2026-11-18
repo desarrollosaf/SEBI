@@ -6,13 +6,9 @@ services:
     restart: unless-stopped
     environment:
       SEBI_BASE: /sebi
-      # IP o nombre con que se entra al servidor (para el certificado). Varios separados por coma.
-      SEBI_HOST: 192.168.1.50
     ports:
-      # https://SERVIDOR:8211/sebi/  (HTTPS, necesario para la cámara del celular)
-      - "8211:8443"
-      # Si pones SEBI detrás de un Nginx/Apache que ya da HTTPS, usa en su lugar:
-      # - "127.0.0.1:8211:8080"
+      # HTTP interno; el HTTPS lo da Apache (https://siasaf.gob.mx/sebi/)
+      - "8211:8080"
     volumes:
       - sebi_data:/data
 
